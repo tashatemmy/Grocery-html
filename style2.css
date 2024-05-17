@@ -130,3 +130,14 @@ button a:hover {
     text-decoration: underline;
     color: #3BB77E;
 }
+@media only screen and (max-width: 580px) {
+    header {
+        height: 8vh;
+    }
+    .top {
+        height: 50px;
+    }
+    .home {
+        padding-top: 18px;
+    }
+}

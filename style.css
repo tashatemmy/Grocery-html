@@ -466,37 +466,44 @@ label button {
 .shop-faster {
     margin-top: 80px;
     width: 100vw;
-    max-height: 600px;
+    max-height: 560px;
     position: relative;
     background: rgba(197, 234, 217, 0.78);
 }
-.shop-faster > img {
+.stay {
     display: inline-block;
     width: 100vw;
-    max-height: 600px;
+    max-height: 520px;
 
 }
 .download {
     box-sizing: border-box;
     width: 90vw;
     margin: 0 auto;
-    padding: 40px 0px 40px 0px;
     display: flex;
+    padding-top: 20px;
 }
 .one {
     box-sizing: border-box;
-    display: inline-block;
-    text-align: center;
-    padding: 60px 0px 60px 0px;
+    display: grid;
+    align-content: center;
+    position: relative;
+    grid-template-rows: 40% 40%;
+    gap: 2%;
+    justify-content: space-between;
+    max-width: 500px;
+    max-height: 500px;
 
 }
 .one img {
-    display: inline-block;
-    max-width: 500px;
-
+    object-fit: contain;
 }
+
+
 .two img {
-    max-height: 450px;
+    max-height: 500px;
+    object-fit: contain;
+   
 }
 
 .benefits {
@@ -593,9 +600,6 @@ object-fit: contain;
     }
     .support-img {
         width: 30%;
-    }
-    .one {
-        padding-top: 150px;
     }
     .fruit {
         display: grid;
