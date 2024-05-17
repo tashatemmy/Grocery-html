@@ -18,6 +18,7 @@ main {
     text-align: center;
 }
 header {
+    height: 10vh;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -25,7 +26,7 @@ header {
     border-bottom: 3px solid #3BB77E;
 }
 .home {
-    padding-top: 20px;
+    padding-top: 25px;
     background: #3BB77E;
 }
 .home a {
@@ -40,7 +41,7 @@ header {
 }
 .top{
     width: 100vw;
-    height: 10vh;
+    height: 60px;
     background:  rgba(242, 252, 228, 1);
     z-index: -1;
     position: absolute;

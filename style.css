@@ -362,7 +362,7 @@ label button {
     z-index: -1;
 }
 .image-three {
-    object-fit: contain;
+    object-fit: cover;
     width: 190px;
     height: 300px;
     display: inline-block;
@@ -372,7 +372,7 @@ label button {
    
 }
 .image-threes {
-    object-fit: contain;
+    object-fit: cover;
     width: 260px;
     height: 245px;
     display: inline-block;
@@ -384,6 +384,9 @@ label button {
 .daily-sales {
     margin: 70px auto;
     width: 90vw;
+}
+.daily-sales img {
+    object-fit: cover;
 }
 .daily {
     max-width: 720px;
@@ -463,22 +466,28 @@ label button {
 .shop-faster {
     margin-top: 80px;
     width: 100vw;
-    max-height: 780px;
+    max-height: 600px;
     position: relative;
     background: rgba(197, 234, 217, 0.78);
 }
 .shop-faster > img {
+    display: inline-block;
     width: 100vw;
-    max-height: 780px;
+    max-height: 600px;
 
 }
 .download {
+    box-sizing: border-box;
     width: 90vw;
     margin: 0 auto;
+    padding: 40px 0px 40px 0px;
     display: flex;
 }
 .one {
-    padding-top: 220px;
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    padding: 60px 0px 60px 0px;
 
 }
 .one img {
@@ -486,8 +495,8 @@ label button {
     max-width: 500px;
 
 }
-.two {
-    padding-top: 60px;
+.two img {
+    max-height: 450px;
 }
 
 .benefits {
@@ -542,7 +551,7 @@ label button {
     display: inline-block;
     max-width: 350px;
     height: 250px;
-    object-fit: contain;
+    object-fit: cover;
 }
 footer {
     position: relative;
@@ -614,11 +623,12 @@ object-fit: contain;
         display: grid;
         grid-template-columns: 1fr;
         text-align: center;
-        gap: 2%;
+        gap: 1%;
     }
 
     .social-icons img {
         position: relative;
+        padding-bottom: 0;
     }
 }
 @media screen and (max-width: 760px) {
@@ -628,11 +638,15 @@ object-fit: contain;
     .veggies {
         z-index: -1;
     }
-    .one {
-        padding-top: 100px;
-    }
 }
 @media screen and (max-width: 680px) {
+    .logo {
+        width: 120px;
+
+    }
+    .profile-pic {
+        width: 123px;
+    }
     .support-img {
         display: none;
     }
@@ -666,7 +680,7 @@ object-fit: contain;
         /* max-width: 320px; */
     }
     .pre-footer {
-        grid-template-columns: 1fr;
+        grid-template-columns: 80%;
         row-gap: 1%;
 
     }
@@ -676,6 +690,15 @@ object-fit: contain;
        
 }
 @media screen and (max-width: 580px) {
+    .do-not h1 {
+        line-height: 1.2;
+    }
+    .do-not p {
+        line-height: 1.4;
+    }
+    form {
+        max-width: 380px;
+    }
     .fruit {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
