@@ -685,6 +685,9 @@ object-fit: contain;
         width: 120px;
 
     }
+    .wishlist-parent {
+        display: none;
+    }
     .profile-pic {
         width: 123px;
     }
