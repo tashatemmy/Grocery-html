@@ -681,6 +681,9 @@ object-fit: contain;
     }
 }
 @media screen and (max-width: 680px) {
+    .first-header {
+        grid-template-columns: repeat(2, 1fr);
+    }
     .logo {
         width: 120px;
 
