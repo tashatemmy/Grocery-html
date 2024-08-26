@@ -20,23 +20,49 @@ header {
     padding-top: 15px;
 }
 
-.first-header , .second-header {
+.first-header {
     width: 90vw;
     margin: 0 auto;
     box-sizing: border-box;
-    display: flex;
+    display: grid;
+   grid-template-columns: repeat(3, 25%);
+   gap: 4%;
     justify-content: space-between;
     padding-bottom: 10px;
 }
 .second-header {
-    position: relative;
+    width: 90vw;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 20% 45% 20%;
+    gap: 5%;
+    justify-content: space-between;
+    padding-bottom: 10px;
 }
+
 
 .logo {
    object-fit: contain;
    width: 147px;
    height: 44px;
     
+}
+.login-button {
+    display: grid;
+   justify-items: flex-end;
+}
+.wishlist-parent {
+    display: grid;
+    justify-items: flex-end;
+}
+.wishlist {
+    padding-top: 10px;
+    max-width: 220px;
+    min-width: 150px;
+    height: 40px;
+
+
 }
 .profile-pic {
     object-fit: contain;
@@ -45,49 +71,48 @@ header {
     display: inline-block;
 }
 .brows {
-    display: inline-block;
-    width: 20%;
+    max-width: 200px;
     object-fit: contain;
     height: 45px;
 }
-nav {
-    height: 40px;
-    padding-top: 10px;
-    padding-left: 30px;
-}
-ul {
-    list-style-type: none;
+.nav {
     display: flex;
-    
+    height: 40px;
 }
-li {
-    font-size: 13px;
-    padding: 0;
-}
-li a {
-    /* display: flex; */
-    text-decoration: none;
-    color: #253D4E;
+.home {
+    padding-top: 13px;
     position: relative;
-    padding: 0;
+    display: flex;
+    /* background: blue; */
+   
 }
+.home a {
+    font-size: 13px;
+    color: #253D4E;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.home p {
+    position: absolute;
+    left: 20px;
+    /* background: red; */
+}
+.home a:hover {
+    color: rgb(47, 161, 47);
+}
+
 a:hover {
     color: rgb(47, 161, 47);
 }
 a:active {
     color: #3BB77E;
 }
-.span {
-    position: absolute;
-    left: 8%;
-}
-.part-two {
-    display: flex;
-    justify-content: flex-end;
-}
+
 .support-img {
-    display: inline-block;
-    width: 20%;
+    display: grid;
+    justify-content: flex-end;
     height: 50px;
     object-fit: contain;
 }
@@ -95,7 +120,6 @@ a:active {
     padding: 2px 15px 2px 15px;
     border: none;
     background: #3BB77E;
-    /* margin-top: 10px; */
     font-size: 12px;
     width: 120px;
     height: 45px;
@@ -585,22 +609,31 @@ object-fit: contain;
     padding-bottom: 10px;
 
 }
-@media screen and (max-width: 900px) {
-    .span {
-        left: 11%;
-    }
+.acknowledgement {
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
 
 }
+.acknowledgement a {
+    text-decoration: none;
+    color: #253D4E;
+}
+
+@media  screen and (max-width: 900px) {
+    .second-header {
+        grid-template-columns: 18% 50% 18%;
+        gap: 3%;
+    }
+    .home a {
+        font-size: 12px;
+    }
+    
+}
+
 @media screen and (max-width: 820px) {
-    #icon {
-        display: none;
-    } 
-    .brows {
-        width: 30%;
-    }
-    .support-img {
-        width: 30%;
-    }
+    
     .fruit {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
@@ -636,9 +669,13 @@ object-fit: contain;
     }
 }
 @media screen and (max-width: 760px) {
-    .span {
+    .second-header {
+        grid-template-columns: repeat(2, 50%);
+    }
+    .nav {
         display: none;
     }
+
     .veggies {
         z-index: -1;
     }
@@ -650,9 +687,6 @@ object-fit: contain;
     }
     .profile-pic {
         width: 123px;
-    }
-    .support-img {
-        display: none;
     }
     .login {
         width: 100px;
